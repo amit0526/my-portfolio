@@ -1,202 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amit Anand | Frontend Developer</title>
-  <link rel="stylesheet" href="CSS/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amit Anand | Frontend Developer</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header>
+      <nav class="navbar">
+        <h1 class="logo"><a href="#home">Amit Anand</a></h1>
 
-<!-- ===== NAVBAR ===== -->
-<header>
-  <nav class="navbar">
-    <h1 class="logo"><a href="#home">Amit Anand</a></h1>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <!-- ===== HERO ===== -->
+    <section id="home" class="home">
+      <div class="home-content">
+        <h2>Hello, I'm</h2>
+        <h1>Amit Anand</h1>
+        <h3><span class="typing"></span></h3>
 
-<!-- ===== HERO ===== -->
-<section id="home" class="home">
-  <div class="home-content">
-    <h2>Hello, I'm</h2>
-    <h1>Amit Anand</h1>
-    <h3><span class="typing"></span></h3>
+        <p>
+          I build responsive and interactive web applications using HTML, CSS
+          and JavaScript. Currently learning React and backend development.
+        </p>
 
-    <p>
-      I build responsive and interactive web applications using HTML, CSS and JavaScript.
-      Currently learning React and backend development.
-    </p>
-
-    <div class="home-actions">
-      <a href="#projects" class="btn primary">View Projects</a>
-     <a href="https://raw.githubusercontent.com/amit0526/my-portfolio/main/Amit_Anand_Resume_.pdf"
-   target="_blank"
-   class="btn secondary">
-   Download Resume
-</a>
-         
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== ABOUT ===== -->
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>
-    I am a Frontend Developer with a strong foundation in HTML, CSS and JavaScript.
-    I enjoy creating clean and responsive user interfaces. I am currently learning React
-    and backend technologies to become a full-stack developer.
-  </p>
-  <p>
-    I am actively looking for internship and junior frontend developer opportunities where
-    I can contribute and grow as a developer.
-  </p>
-</section>
-
-<!-- ===== SKILLS ===== -->
-<section id="skills" class="section">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-card">HTML</div>
-    <div class="skill-card">CSS</div>
-    <div class="skill-card">JavaScript</div>
-    <div class="skill-card">React</div>
-    <div class="skill-card">Node.js</div>
-    <div class="skill-card">MongoDB</div>
-    <div class="skill-card">Git & GitHub</div>
-    <div class="skill-card">VS Code</div>
-  </div>
-</section>
-
-<!-- ===== PROJECTS ===== -->
-<section id="projects" class="section">
-  <h2>Projects</h2>
-
-  <div class="projects-container">
-
-    <!-- Amazon Clone -->
-    <div class="project-card">
-      <h3>Amazon Clone</h3>
-      <p>Responsive e-commerce UI inspired by Amazon homepage.</p>
-
-      <div class="project-buttons">
-        <a href="https://amit0526.github.io/amazon-clone/" target="_blank" class="btn primary">
-          Live Demo
-        </a>
-        <a href="https://github.com/amit0526/amazon-clone" target="_blank" class="btn secondary">
-          GitHub
-        </a>
+        <div class="home-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <!-- ⚠️ Yahan RAW resume link lagana -->
+          <a
+            href="https://raw.githubusercontent.com/amit0526/My-Portfolio/main/Amit_Anand_Frontend_Developer_Resume_FINAL.pdf"
+            class="btn secondary"
+            target="_blank"
+          >
+            Download Resume
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Myntra Clone -->
-    <div class="project-card">
-      <h3>Myntra Clone</h3>
-      <p>Fashion shopping website UI with product layout and navigation.</p>
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <img src="image/about.jpeg" alt="Amit Anand" class="about-photo" />
+      <p>
+        I am a Frontend Developer with a strong foundation in HTML, CSS and
+        JavaScript. I enjoy creating clean and responsive user interfaces. I am
+        currently learning React and backend technologies to become a full-stack
+        developer.
+      </p>
+      <p>
+        I am actively looking for internship and junior frontend developer
+        opportunities where I can contribute and grow as a developer.
+      </p>
+    </section>
 
-      <div class="project-buttons">
-        <a href="https://amit0526.github.io/myntra-clone/" target="_blank" class="btn primary">
-          Live Demo
-        </a>
-        <a href="https://github.com/amit0526/myntra-clone" target="_blank" class="btn secondary">
-          GitHub
-        </a>
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React</div>
+        <div class="skill-card">Node.js</div>
+        <div class="skill-card">MongoDB</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">VS Code</div>
       </div>
-    </div>
+    </section>
 
-    <!-- Coffee Shop -->
-    <div class="project-card">
-      <h3>Coffee Shop Website</h3>
-      <p>Modern and responsive coffee shop landing page design.</p>
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
 
-      <div class="project-buttons">
-        <a href="https://amit0526.github.io/coffee-shop/" target="_blank" class="btn primary">
-          Live Demo
-        </a>
-        <a href="https://github.com/amit0526/coffee-shop" target="_blank" class="btn secondary">
-          GitHub
-        </a>
+      <div class="projects-container">
+        <!-- Amazon Clone -->
+        <div class="project-card">
+          <h3>Amazon Clone</h3>
+          <p>Responsive e-commerce UI inspired by Amazon homepage.</p>
+
+          <div class="project-buttons">
+            <a
+              href="https://amit0526.github.io/amazon-clone/"
+              target="_blank"
+              class="btn primary"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/amit0526/amazon-clone"
+              target="_blank"
+              class="btn secondary"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Myntra Clone -->
+        <div class="project-card">
+          <h3>Myntra Clone</h3>
+          <p>Fashion shopping website UI with product layout and navigation.</p>
+
+          <div class="project-buttons">
+            <a
+              href="https://amit0526.github.io/myntra-clone/"
+              target="_blank"
+              class="btn primary"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/amit0526/myntra-clone"
+              target="_blank"
+              class="btn secondary"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Coffee Shop -->
+        <div class="project-card">
+          <h3>Coffee Shop Website</h3>
+          <p>Modern and responsive coffee shop landing page design.</p>
+
+          <div class="project-buttons">
+            <a
+              href="https://amit0526.github.io/coffee-shop/"
+              target="_blank"
+              class="btn primary"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/amit0526/coffee-shop"
+              target="_blank"
+              class="btn secondary"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Calculator -->
+        <div class="project-card">
+          <h3>Advanced Calculator</h3>
+          <p>
+            Interactive calculator supporting bracket expressions and percentage
+            calculations.
+          </p>
+
+          <div class="project-buttons">
+            <a
+              href="https://amit0526.github.io/devcalc/"
+              target="_blank"
+              class="btn primary"
+            >
+              Live Demo
+            </a>
+            <a
+              href="https://github.com/amit0526/devcalc/"
+              target="_blank"
+              class="btn secondary"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Glass 3D Contact Form -->
+        <div class="project-card">
+          <h3>Glass 3D Contact Form</h3>
+          <p>
+            A modern glassmorphism contact form with animated 3D particle
+            background built using Three.js.
+          </p>
+
+          <div class="project-buttons">
+            <a
+              href="https://amit0526.github.io/glass-3d-contact-form/"
+              target="_blank"
+              class="btn primary"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/amit0526/glass-3d-contact-form"
+              target="_blank"
+              class="btn secondary"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Calculator -->
-    <div class="project-card">
-      <h3>Advanced Calculator</h3>
-      <p>Interactive calculator supporting bracket expressions and percentage calculations.</p>
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
 
-      <div class="project-buttons">
-        <a href="https://amit0526.github.io/devcalc/" target="_blank" class="btn primary">
-          Live Demo
-        </a>
-        <a href="https://github.com/amit0526/devcalc/" target="_blank" class="btn secondary">
-          GitHub
-        </a>
-      </div>
-    </div>
-    
-   <!-- Glass 3D Contact Form -->
-<div class="project-card">
-  <h3>Glass 3D Contact Form</h3>
-  <p>
-    A modern glassmorphism contact form with animated 3D particle background
-    built using Three.js.</p>
+      <p>
+        📧 Email:
+        <a href="mailto:amit.anand031020@gmail.com"
+          >amit.anand031020@gmail.com</a
+        >
+      </p>
+      <p>
+        🔗 LinkedIn:
+        <a href="https://www.linkedin.com/in/amit-anand23" target="_blank"
+          >View Profile</a
+        >
+      </p>
+      <p>
+        💻 GitHub:
+        <a href="https://github.com/amit0526" target="_blank"
+          >github.com/amit0526</a
+        >
+      </p>
 
-  <div class="project-buttons">
-    <a href="https://amit0526.github.io/glass-3d-contact-form/" 
-       target="_blank" 
-       class="btn primary">
-      Live Demo
-    </a>
+      <h3>I’m open to internship and junior frontend opportunities.</h3>
+    </section>
 
-    <a href="https://github.com/amit0526/glass-3d-contact-form" 
-       target="_blank" 
-       class="btn secondary">
-      GitHub
-    </a>
-  </div>
-</div>
+    <footer>
+      <p>© 2026 Amit Anand | All Rights Reserved</p>
+    </footer>
 
-  </div>
-</section>
-
-<!-- ===== CONTACT ===== -->
-<section id="contact" class="section">
-  <h2>Contact</h2>
-
-  <p>📧 Email: <a href="mailto:amit.anand031020@gmail.com">amit.anand031020@gmail.com</a></p>
-  <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/amit-anand23" target="_blank">View Profile</a></p>
-  <p>💻 GitHub: <a href="https://github.com/amit0526" target="_blank">github.com/amit0526</a></p>
-
-  <h3>I’m open to internship and junior frontend opportunities.</h3>
-</section>
-
-<footer>
-  <p>© 2026 Amit Anand | All Rights Reserved</p>
-</footer>
-
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="script/script.js"></script>
-
-</body>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script/script.js"></script>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
