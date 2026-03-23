@@ -1,3 +1,4 @@
+// ===== TYPING EFFECT =====
 var typed = new Typed(".typing", {
   strings: [
     "Frontend Developer",
@@ -10,18 +11,32 @@ var typed = new Typed(".typing", {
   loop: true,
 });
 
-ScrollReveal({
-  distance: "60px",
-  duration: 1500,
-  delay: 200,
+// ===== SCROLL REVEAL =====
+const sr = ScrollReveal({
+  distance: "50px",
+  duration: 1200,
+  delay: 150,
+  reset: false, // better performance (no repeat animation)
 });
 
-ScrollReveal().reveal(".section, .project-card, .skill-card", {
+// sections animation
+sr.reveal(".section", {
   origin: "bottom",
-  interval: 150,
+  interval: 100,
 });
 
-document.addEventListener("mousemove", (e) => {
-  document.documentElement.style.setProperty("--x", e.clientX + "px");
-  document.documentElement.style.setProperty("--y", e.clientY + "px");
+// cards animation
+sr.reveal(".project-card, .skill-card", {
+  origin: "bottom",
+  interval: 100,
 });
+
+// ===== MOUSE GLOW EFFECT (FIXED FOR MOBILE) =====
+const isMobile = window.innerWidth <= 768;
+
+if (!isMobile) {
+  document.addEventListener("mousemove", (e) => {
+    document.documentElement.style.setProperty("--x", e.clientX + "px");
+    document.documentElement.style.setProperty("--y", e.clientY + "px");
+  });
+}
