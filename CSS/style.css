@@ -220,8 +220,27 @@ nav {
 /* ===== BUTTON GROUP ===== */
 .project-buttons {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
   flex-wrap: wrap;
+}
+.project-buttons a {
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.live-btn {
+  background: linear-gradient(135deg, #00ff9d, #00c3ff);
+  color: #000;
+}
+
+.github-btn {
+  border: 2px solid #00ff9d;
+  color: #00ff9d;
 }
 
 /* ===== CONTACT ===== */
@@ -257,8 +276,11 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
+.project-buttons a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 157, 0.5);
+ }
 }
-
 /* ===== ABOUT ===== */
 #about {
   text-align: center;
@@ -273,7 +295,7 @@ footer {
   border: 3px solid var(--accent);
 }
 
-#about p {
+#about photo {
   max-width: 750px;
   margin: 15px auto;
   color: var(--text-muted);
@@ -312,4 +334,40 @@ footer {
     width: 160px;
     height: 160px;
   }
+
+@media (max-width: 480px) {
+  .project-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
+  .about-photo {
+  border-radius: 20px;
+  transition: 0.4s ease;
+  border: 2px solid #00ff9d;
+}
+
+.about-photo:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 0 25px rgba(0, 255, 157, 0.6);
+}
+  .about-content {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.4s ease;
+}
+  
+  .fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+  
